@@ -28,7 +28,7 @@ public class BankSystemImpl implements BankSystem{
 
     @Override
     public void transferMoney(User fromUser, User toUser, int amount) {
-        if (amount <= fromUser.getBank().getLimitOfWithdrawal() || amount <= toUser.getBank().getLimitOfFunding()){
+        if (amount <= fromUser.getBank().getLimitOfWithdrawal() && amount <= toUser.getBank().getLimitOfFunding()){
             if (fromUser.getBalance() - amount * (1+(float)fromUser.getBank().getCommission(amount)/100) >= 0){
                 fromUser.setBalance(fromUser.getBalance() - amount * (1+(float)fromUser.getBank().getCommission(amount)/100));
                 toUser.setBalance(toUser.getBalance() + amount * (1 - (float)toUser.getBank().getCommission(amount)/100));
