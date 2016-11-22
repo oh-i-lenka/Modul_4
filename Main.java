@@ -13,17 +13,17 @@ public class Main {
         ChinaBank ChinesischBank = new ChinaBank(1234516789, "China", 5008, 2150, 5, 987651432);
 
         User Person1 = new User(1111111111, "Birgit", 10000, 12, "LimeSoda GMBH", 4500, Erstebank);
-        Person1.bank.setBankCurrency(Currency.EUR);
+        Person1.getBank().setBankCurrency(Currency.EUR);
         User Person2 = new User(222222222, "Petra", 5000, 1, "Schwarzkopf", 2920, DeutcheBank);
-        Person2.bank.setBankCurrency(Currency.USD);
+        Person2.getBank().setBankCurrency(Currency.USD);
         User Person3 = new User(333333333, "David", 5000, 52, "Wallmart", 3560, ManhattanBank);
-        Person3.bank.setBankCurrency(Currency.EUR);
+        Person3.getBank().setBankCurrency(Currency.EUR);
         User Person4 = new User(444444444, "Sam", 5200, 15, "Amazon", 2500, WashingtonBank);
-        Person4.bank.setBankCurrency(Currency.USD);
+        Person4.getBank().setBankCurrency(Currency.USD);
         User Person5 = new User(555555555, "Jao", 60000, 52, "ChinaAirlines", 2800, BeijingBank);
-        Person5.bank.setBankCurrency(Currency.EUR);
+        Person5.getBank().setBankCurrency(Currency.EUR);
         User Person6 = new User(666666666, "Xiaoly", 85000, 65, "ChinaGoods", 2100, ChinesischBank);
-        Person6.bank.setBankCurrency(Currency.USD);
+        Person6.getBank().setBankCurrency(Currency.USD);
 
         BankSystemImpl moneyOperations = new BankSystemImpl();
 

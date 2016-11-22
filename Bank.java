@@ -1,13 +1,13 @@
 package Task_1;
 
  abstract class Bank {
-        long id;
-        String bankCountry;
+        private long id;
+        private String bankCountry;
         private Currency bankCurrency;
-        int numberOfEmployees;
-        double avrSalaryOfEmployee;
-        long rating;
-        long totalCapital;
+        private int numberOfEmployees;
+        private double avrSalaryOfEmployee;
+        private long rating;
+        private long totalCapital;
 
      public Bank(long id, String bankCountry, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
          this.id = id;
