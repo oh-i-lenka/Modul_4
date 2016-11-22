@@ -19,7 +19,7 @@ public class USBank extends Bank {
     @Override
     int getLimitOfFunding() {
         if (this.getBankCurrency() == Currency.USD)
-            return 999999999; //требует правки!!
+            return -1;
         else {
             return 10000;
         }

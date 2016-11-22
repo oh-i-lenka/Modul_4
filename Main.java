@@ -24,12 +24,14 @@ public class Main {
         Person5.bank.setBankCurrency(Currency.EUR);
         User Person6 = new User(666666666, "Xiaoly", 85000, 65, "ChinaGoods", 2100, ChinesischBank);
         Person6.bank.setBankCurrency(Currency.USD);
-        BankSystemImpl moneyOperations = new BankSystemImpl();
-//        System.out.println(Person1.toString());
-//        moneyOperations.withdrawOfUser(Person6, 50);
-//        moneyOperations.fundUser(Person1, 1000);
 
-//        moneyOperations.paySalary(Person3);
+        BankSystemImpl moneyOperations = new BankSystemImpl();
+
+        System.out.println(Person1.toString());
+
+        moneyOperations.withdrawOfUser(Person6, 50);
+        moneyOperations.fundUser(Person4, 1000000);
+        moneyOperations.paySalary(Person3);
         moneyOperations.transferMoney(Person1, Person2, 1000);
     }
 }
