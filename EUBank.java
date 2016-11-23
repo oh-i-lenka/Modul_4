@@ -5,8 +5,8 @@ public class EUBank extends Bank {
     public EUBank() {
     }
 
-    public EUBank(long id, String bankCountry, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
-        super(id, bankCountry, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);
+    public EUBank(long id, String bankCountry, Currency bankCurrency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
+        super(id, bankCountry, bankCurrency, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);
     }
 
     @Override

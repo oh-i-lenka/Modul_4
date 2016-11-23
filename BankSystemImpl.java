@@ -33,7 +33,7 @@ public class BankSystemImpl implements BankSystem{
                 fromUser.setBalance(fromUser.getBalance() - amount * (1+(float)fromUser.getBank().getCommission(amount)/100));
                 toUser.setBalance(toUser.getBalance() + amount * (1 - (float)toUser.getBank().getCommission(amount)/100));
                 System.out.println("Transfer money from " + fromUser.getName() + " to " + toUser.getName() + " " + amount + fromUser.getBank().getBankCurrency() + " complete!");
-            } else System.out.println("Not enough money " + fromUser.getName() + ". Balance is " + fromUser.getBalance() + fromUser.getBank().getBankCurrency());
+            } else System.out.println("Not enough money " + fromUser.getName() + ". Balance is " + fromUser.getBalance() + " " + fromUser.getBank().getBankCurrency());
         } else {
             System.out.println("The operation has cancelled by Bank");
         }

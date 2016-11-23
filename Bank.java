@@ -9,9 +9,10 @@ package Task_1;
         private long rating;
         private long totalCapital;
 
-     public Bank(long id, String bankCountry, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
+     public Bank(long id, String bankCountry, Currency bankCurrency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
          this.id = id;
          this.bankCountry = bankCountry;
+         this.bankCurrency = bankCurrency;
          this.numberOfEmployees = numberOfEmployees;
          this.avrSalaryOfEmployee = avrSalaryOfEmployee;
          this.rating = rating;

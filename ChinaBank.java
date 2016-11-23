@@ -2,9 +2,11 @@ package Task_1;
 
 public class ChinaBank extends Bank {
 
-    public ChinaBank(long id, String bankCountry, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
-        super(id, bankCountry, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);
+    public ChinaBank(long id, String bankCountry, Currency bankCurrency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
+        super(id, bankCountry, bankCurrency, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);
     }
+
+
 
     @Override
     int getLimitOfWithdrawal() {
